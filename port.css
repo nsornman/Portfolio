@@ -25,12 +25,20 @@ nav ul{
     margin: 0;
     list-style-type: none;
     align-items: center;
+    color: #666;
+
 }
 nav li{
-    margin-top: 20px;
+    padding-top: 1vw;
     margin-left: 50px;
-    top: 20vw;
-    color: #666;
+
+}
+nav .logo{
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    left: 3vw;
+    top: 0.5vw;
 }
 .dropdown-content {
     display: none; /* Hide dropdown by default */
