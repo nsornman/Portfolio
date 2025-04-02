@@ -186,3 +186,77 @@ nav a:hover{
     transform: scale(0.9);
     transition: ease-in-out 0.2s;
 }
+/* -------------------------------------contacts---------------------------------- */
+/* .contacts{
+    margin: 800px 0;
+    position: relative;
+    right: 50%;
+    transform: translateX(50%);
+} */
+.socialscontainer{
+    /* position: absolute; */
+    margin: 4300px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    z-index: 1000;
+    right: 50%;
+    /* transform: translateX(50%); */
+}
+.socialscontainer a{
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+}
+.socialscontainer a svg{
+    height: 32px;
+    fill: #18181b;
+}
+.socialscontainer a::before{
+    content: attr(data-social);
+    position: absolute;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 100px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+    transform: translateY(-30px) rotate(25deg);
+    opacity: 0;
+    transition: 200ms cubic-bezier(.42,0,.44,1.68);
+}
+.socialscontainer a:hover{
+    background-color: var(--accent-color);
+    fill: white;
+}
+.socialscontainer a:hover svg{
+    fill: white;
+}
+.socialscontainer a::after{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid var(--accent-color);
+    transform: translateY(0) rotate(25deg);
+    opacity: 0;
+    transition: 200ms cubic-bezier(.42,0,.44,1.68);
+}
+.socialscontainer a:hover::before{
+    transform: translateY(-65px) rotate(0);
+    opacity: 1;
+}
+.socialscontainer a:hover::after{
+    transform: translateY(-42px) rotate(0);
+    opacity: 1;
+}
