@@ -5,20 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="port.css">
+    <link rel="website icon" type="img" href="Portfolio (1).png">
 </head>
 <body>
-    <script src="port.js"></script>
+    <!-- <script src="port.js"></script> -->
     <nav>
-        <ul>
+        <ul class = "default">
+            <li class = "hideOnmobile"><a href="#home">Home</a></li>
+            <li class = "hideOnmobile"><a href="#about">About Me</a></li>
+            <li class = "hideOnmobile"><a href="#experiences">Experiences</a></li>
+            <li class = "hideOnmobile"><a href="#contracts">Contracts</a></li>
+            <li class = "menu-button" onclick="showSidebar()"><a href="#"></a><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+        </ul>
+        <ul class = "sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
-            <li ><a href="#experiences">Experiences</a></li>
+            <li><a href="#experiences">Experiences</a></li>
             <li><a href="#contracts">Contracts</a></li>
         </ul>
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = "flex"
+            }
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = "none"
+            }
+        </script>
     </nav>
     <section class = "home" id="home">
         <p class = "top" >Hello I'm</p>
-        <p class="name">Nachakhun sornmanee</p>
+        <p class="name">Nachakhun Sornmanee</p>
     </section>
     <section class = "about" id="about">
             <div class = "slide">
@@ -30,7 +49,7 @@
             <li>Name : Nachakhun Sornmanee</li>
             <li>Nick name : Namo</li>
             <li>Age : 18</li>
-            <li>School : Bodindecha (Sing Singhaseni) School , BD</li>
+            <li>School : Bodindecha (Sing Singhaseni), BD</li>
             <li>Religion : Buddhism</li>
             <li>Skills : Pyrhon ,C# ,C++ ,Html ,CSS ,Javascript(a little)</li>
             <li>Tel : 080-940-9451</li>
@@ -41,51 +60,65 @@
         <h1 class = "head">Experiences
             <br>Click to see more..</h1>
         </h1>
+        <script src="port.js"></script>
         <div class="all-cer" id ="all-cer">
+            
             <div class="cer1">
-                <img src="cer/42BKK/42py.png" alt="">
-                <p>เกียรติบัตรผ่านการอบรมค่าย INTRODUCTION TO PYTHON <br>จัดขึ้นโดย 42Bangkok KMITL </p>
+                <img src="Cer/YSC/Ysc_page-0001.jpg" alt="">
+                <p class = "sub">เกียรติบัตรผ่านการรอบคัดเลือดระดับภูมิภาค ประกวดโครงงานของนักวิทยาศาสตร์รุ่นเยาว์ ครั้งที่ 27<br>จัดขึ้นโดย สวทช.</p>
+                <!-- <p class="sub">เป็นการแข่งขัน YSC ครั้งแรกทำกับเพื่อนในหัวข้อ การประยุกต์ใช้หลักการอินทิเกรตตามวิถีของฟายน์เเมนในระบบการเรียนรู้ของเครื่อง(คอมพิวเตอร์) เข้ารอบเสนอโครงงาน</p> -->
             </div>
             <div class="cer2">
-                <img src="Cer/42BKK/42web.png" alt="">
-                <p>เกียรติบัตรผ่านการอบรมค่าย BASIC WEB DEVELOPMENT<br>จัดขึ้นโดย 42Bangkok KMITL</p>
+                <img src="Cer/42BKK/codeaton 42bkk.png" alt="">
+                <p class = "sub">เกียรติบัตรเข้าร่วมการแข่งขัน Codeathon<br>จัดขึ้นโดย 42Bangkok KMITL</p>
+                <!-- <p class = "sub">เป็นการแข่งขันพัฒนาไอเดียในการแก้ปัญหาหัวข้อ Innovation for Future ทีมผมได้ทำแอปเกี่ยวกับคนที่เรียนไม่ตรงสาย แล้วอยากหาเส้นทางของอาชีพที่สนใจว่าทำงานยังไงบ้าง</p> -->
             </div>
             <div class="cer3">
-                <img src="Cer/42BKK/codeaton 42bkk.png" alt="">
-                <p>เกียรติบัตรเข้าร่วมการแข่งขัน Codeathon<br>จัดขึ้นโดย 42Bangkok KMITL</p>
+                <img src="Cer/metaverse/cu.jpg" alt="">
+                <p class = "sub">เกียรติบัตรเข้ารอบ 20 ทีมการแข่งขัน THAILAND METAVERSE HACKATHON and EXHIBITION</p>
+                <!-- <p class="sub">เป็นการเอาโปรเจคจากการแข่งขัน Codeathon มาต่อยอดโดยเพิ่มฟังชันก์ Metaverse เข้าไป และปรับปรุงเพิ่มฟีเจอร์</p> -->
             </div>
-            <div class = "cer4">
-                <img src="Cer/Pre-degree/Phy.jpg" alt="">
-                <p>เกียรติบัตรการผ่านการอบรมหลักสูตร Credit bank วิชาฟิสิกส์ <br>จัดขึ้นโดย คณะวิทยาศาสตร์ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+            <div class="cer4">
+                <img src="Cer/it-clash.jpg" alt="">
+                <p class="sub">เกียรติบัตรเข้าร่วมการแข่งขัน IT CLASH KMITL Cybersecurity</p>
             </div>
-            <div class = "cer5">
-                <img src="Cer/Pre-degree/Calculus.jpg" alt="">
-                <p>เกียรติบัตรการผ่านการอบรมหลักสูตร Credit bank วิชาแคลคูลัส <br>จัดขึ้นโดย คณะวิทยาศาสตร์ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+            <div class="cer5">
+                <img src="Cer/42BKK/42py.png" alt="">
+                <p class = "sub">เกียรติบัตรผ่านการอบรมค่าย INTRODUCTION TO PYTHON <br>จัดขึ้นโดย 42Bangkok KMITL </p>
+                <!-- <p class = "sub">เป็นค่ายที่ทำให้ผมได้มีความเข้าใจเกี่ยวกับ Python มากขึ้น เช่น คำสั่งต่างๆ การใช้ function ของ python</p> -->
             </div>
-            <div class = "cer6">
-                <img src="Cer/Robo KU/Robo.jpg" alt="">
-                <p>เกียรติบัตรผ่านการอบรมค่าย Digtal Cobot Camp<br>จัดขึ้นโดย มหาวิทยาลัยเกษตรศาสตร์</p>
+            <div class="cer6">
+                <img src="Cer/42BKK/42web.png" alt="">
+                <p class = "sub">เกียรติบัตรผ่านการอบรมค่าย BASIC WEB DEVELOPMENT<br>จัดขึ้นโดย 42Bangkok KMITL</p>
+                <!-- <p class = "sub">ค่ายนี้ช่วยในการพัฒนาฝีมือในการเขียนเว็บของ เพราะว่าก่อนที่จะมาเข้าค่ายผมก็ยังเขียนเว็บไม่ค่ายเก่งเท่าไหร่ แต่พอมาค่ายนี้มีโจทย์ให้ฝึกทำ มีเพื่อนๆในค่ายที่เก่งค่อยช่วย ทำให้ผมพัฒนาขึ้น</p> -->
             </div>
-            <div class = "cer7">
-                <img src="Cer/TUEFREE/TF.jpg" alt="">
-                <p>เกียรติบัตรผ่านการอบรมค่าย TUEFREE<br>จัดขึ้นโดย คณะวิทยาศาสตร์ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
-            </div>
-            <div class="cer8">
+            <div class="cer7">
                 <img src="Cer/UTCC/UTCC.jpg" alt="">
-                <p>เกียรติบัตรผ่านการอบรมค่าย Leagues of Code Summer Camp ปี3<br>จัดขึ้นโดย โครงการ Leagues of Code TH ภายใต้มหาวิทยาลัยหอการค้าไทย</p>
+                <p class = "sub">เกียรติบัตรผ่านการอบรมค่าย Leagues of Code Summer Camp ปี3<br>จัดขึ้นโดย โครงการ Leagues of Code TH ภายใต้มหาวิทยาลัยหอการค้าไทย</p>
+                <!-- <p class="sub">ค่ายนี้ทำให้ผมได้เริ่มเรียนรู้หลักภาษาในการเขียน C/C++ เป็นค่ายแรกที่ทำให้ได้เริ่มเรียน C/C++ อย่างจริงจัง</p> -->
             </div>
-            <div class="cer9">
-                <img src="Cer/YSC/Ysc_page-0001.jpg" alt="">
-                <p>เกียรติบัตรผ่านการรอบคัดเลือดระดับภูมิภาค ประกวดโครงงานของนักวิทยาศาสตร์รุ่นเยาว์ ครั้งที่ 27<br>จัดขึ้นโดย สวทช.</p>
+            <div class = "cer8">
+                <img src="Cer/Pre-degree/Phy.jpg" alt="">
+                <p class = "sub">เกียรติบัตรการผ่านการอบรมหลักสูตร Credit bank วิชาฟิสิกส์ <br>จัดขึ้นโดย คณะวิทยาศาสตร์ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+                <!-- <p class="sub">คือการเรียนเก็บเกรดล่วงหน้าของลาดกระบังในวิชาฟิสิกส์ทั่วไป ผมผ่านการเรียนตลอดหลักสูตรโดยได้เกรด B</p> -->
             </div>
-            <div class="cer10">
-                <img src="Cer/OPH_KMITL/iot.jpg" alt="">
-                <p>เกียรติบัตรเข้าร่วมงาน workshop Openhouse School of Engineering <br>จัดขึ้นโดย School of Engineering KMITL</p>
+            <div class = "cer9">
+                <img src="Cer/Pre-degree/Calculus.jpg" alt="">
+                <p class = "sub">เกียรติบัตรการผ่านการอบรมหลักสูตร Credit bank วิชาแคลคูลัส <br>จัดขึ้นโดย คณะวิทยาศาสตร์ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+                <!-- <p class="sub">คือการเรียนเก็บเกรดล่วงหน้าของลาดกระบังในวิชาแคลคูลัสทั่วไป ผมผ่านการเรียนตลอดหลักสูตรโดยได้เกรด C+</p> -->
             </div>
-            <div class="cer11">
-                <img src="Cer/OPH_KMITL/py.jpg" alt="">
-                <p>เกียรติบัตรเข้าร่วมงาน workshop Openhouse School of Engineering <br>จัดขึ้นโดย School of Engineering KMITL</p>
+            <div class = "cer10">
+                <img src="Cer/Robo KU/Robo.jpg" alt="">
+                <p class = "sub">เกียรติบัตรผ่านการอบรมค่าย 
+                    Digtal Cobot Camp<br>จัดขึ้นโดย มหาวิทยาลัยเกษตรศาสตร์</p>
+                <!-- <p class="sub">ค่ายนี้สอนเกี่ยวกับการเขียนโปรแกรมควบคุมรถบังคับ โดยใช้ ESP32 เป็นครั้งแรกที่ทำให้ผมรู้จักกับบอร์ด ESP32</p> -->
             </div>
+            <div class = "cer11">
+                <img src="Cer/TUEFREE/TF.jpg" alt="">
+                <p class = "sub">เกียรติบัตรผ่านการอบรมค่าย TUEFREE<br>จัดขึ้นโดย คณะวิทยาศาสตร์ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+                <!-- <p class="sub">เป็นค่ายที่ติวเนื้อหา PAT3 ทำให้มีความเข้าใจเกี่ยวกับโครงสร้างสอบเพิ่มขึ้น โดยรุ่นพี่คณะวิทยาศาสตร์</p> -->
+            </div>
+            
         </div>
         <div class="ap">
             <h1 class = "head">Appointment from HamterHub
